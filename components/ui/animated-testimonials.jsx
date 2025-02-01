@@ -6,7 +6,8 @@ import { useEffect, useState } from "react";
 
 export const AnimatedTestimonials = ({ testimonials, autoplay = false }) => {
   const [active, setActive] = useState(0);
-
+  const [mounted, setMounted] = useState(false);
+  const [rotateY, setRotateY] = useState(0);
   const handleNext = () => {
     setActive((prev) => (prev + 1) % testimonials.length);
   };
@@ -24,6 +25,8 @@ export const AnimatedTestimonials = ({ testimonials, autoplay = false }) => {
       const interval = setInterval(handleNext, 5000);
       return () => clearInterval(interval);
     }
+    setMounted(true);
+    setRotateY(Math.floor(Math.random() * 21) - 10);
   }, [autoplay]);
 
   const randomRotateY = () => {
@@ -39,16 +42,16 @@ export const AnimatedTestimonials = ({ testimonials, autoplay = false }) => {
                 <motion.div
                   key={testimonial.src}
                   initial={{
-                    opacity: 0,
+                    opacity: mounted ? 1 : 0,
                     scale: 0.9,
                     z: -100,
-                    rotate: randomRotateY(),
+                    rotate: rotateY,
                   }}
                   animate={{
                     opacity: isActive(index) ? 1 : 0.7,
                     scale: isActive(index) ? 1 : 0.95,
                     z: isActive(index) ? 0 : -100,
-                    rotate: isActive(index) ? 0 : randomRotateY(),
+                    rotate: isActive(index) ? 0 : rotateY,
                     zIndex: isActive(index)
                       ? 999
                       : testimonials.length + 2 - index,
@@ -58,7 +61,7 @@ export const AnimatedTestimonials = ({ testimonials, autoplay = false }) => {
                     opacity: 0,
                     scale: 0.9,
                     z: 100,
-                    rotate: randomRotateY(),
+                    rotate: rotateY,
                   }}
                   transition={{
                     duration: 0.4,
