@@ -3,7 +3,7 @@ import React from "react";
 const Navbar = () => {
   return (
     <div>
-      <nav className="relative px-4 py-4 flex justify-between items-center bg-white">
+      <nav className="relative px-4 py-4 flex justify-between items-center bg-maroon">
         <a className="text-3xl font-bold leading-none" href="#">
           <svg className="h-10" alt="logo" viewBox="0 0 10240 10240">
             <path
@@ -47,7 +47,7 @@ const Navbar = () => {
             </svg>
           </li>
           <li>
-            <a className="text-sm text-blue-600 font-bold" href="#">
+            <a className="text-sm text-gold font-bold" href="#">
               About Us
             </a>
           </li>
@@ -117,7 +117,7 @@ const Navbar = () => {
         </ul>
 
         <a
-          className="hidden lg:inline-block py-2 px-6 bg-blue-500 hover:bg-blue-600 text-sm text-white font-bold rounded-xl transition duration-200"
+          className="hidden lg:inline-block py-2 px-6 bg-gold hover:bg-gold text-sm text-white font-bold rounded-xl transition duration-200"
           href="#"
         >
           Register
