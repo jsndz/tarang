@@ -135,13 +135,13 @@ export default function CulturalEv() {
               <div className="">
                 <motion.h3
                   layoutId={`title-${card.title}-${id}`}
-                  className="font-medium text-neutral-800 dark:text-neutral-200 text-center md:text-left"
+                  className="font-medium text-text dark:text-neutral-200 text-center md:text-left"
                 >
                   {card.title}
                 </motion.h3>
                 <motion.p
                   layoutId={`description-${card.description}-${id}`}
-                  className="text-neutral-600 dark:text-neutral-400 text-center md:text-left"
+                  className="text-paragraph dark:text-neutral-400 text-center md:text-left"
                 >
                   {card.description}
                 </motion.p>
@@ -189,113 +189,96 @@ export const CloseIcon = () => {
 
 const cards = [
   {
-    description: "Lana Del Rey",
-    title: "Summertime Sadness",
-    src: "https://assets.aceternity.com/demos/lana-del-rey.jpeg",
-    ctaText: "Play",
-    ctaLink: "https://ui.aceternity.com/templates",
-    content: () => {
-      return (
-        <p>
-          Lana Del Rey, an iconic American singer-songwriter, is celebrated for
-          her melancholic and cinematic music style. Born Elizabeth Woolridge
-          Grant in New York City, she has captivated audiences worldwide with
-          her haunting voice and introspective lyrics. <br /> <br />
-          Her songs often explore themes of tragic romance, glamour, and
-          melancholia, drawing inspiration from both contemporary and vintage
-          pop culture. With a career that has seen numerous critically acclaimed
-          albums, Lana Del Rey has established herself as a unique and
-          influential figure in the music industry, earning a dedicated fan base
-          and numerous accolades.
-        </p>
-      );
-    },
-  },
-  {
-    description: "Babbu Maan",
-    title: "Mitran Di Chhatri",
-    src: "https://assets.aceternity.com/demos/babbu-maan.jpeg",
-    ctaText: "Play",
-    ctaLink: "https://ui.aceternity.com/templates",
-    content: () => {
-      return (
-        <p>
-          Babu Maan, a legendary Punjabi singer, is renowned for his soulful
-          voice and profound lyrics that resonate deeply with his audience. Born
-          in the village of Khant Maanpur in Punjab, India, he has become a
-          cultural icon in the Punjabi music industry. <br /> <br />
-          His songs often reflect the struggles and triumphs of everyday life,
-          capturing the essence of Punjabi culture and traditions. With a career
-          spanning over two decades, Babu Maan has released numerous hit albums
-          and singles that have garnered him a massive fan following both in
-          India and abroad.
-        </p>
-      );
-    },
-  },
-
-  {
-    description: "Metallica",
-    title: "For Whom The Bell Tolls",
-    src: "https://assets.aceternity.com/demos/metallica.jpeg",
-    ctaText: "Play",
-    ctaLink: "https://ui.aceternity.com/templates",
-    content: () => {
-      return (
-        <p>
-          Metallica, an iconic American heavy metal band, is renowned for their
-          powerful sound and intense performances that resonate deeply with
-          their audience. Formed in Los Angeles, California, they have become a
-          cultural icon in the heavy metal music industry. <br /> <br />
-          Their songs often reflect themes of aggression, social issues, and
-          personal struggles, capturing the essence of the heavy metal genre.
-          With a career spanning over four decades, Metallica has released
-          numerous hit albums and singles that have garnered them a massive fan
-          following both in the United States and abroad.
-        </p>
-      );
-    },
-  },
-  {
-    description: "Led Zeppelin",
-    title: "Stairway To Heaven",
+    description: "Painting - Rangrez",
+    title: "Expressing Creativity on Canvas",
     src: "https://assets.aceternity.com/demos/led-zeppelin.jpeg",
-    ctaText: "Play",
+    ctaText: "Participate",
     ctaLink: "https://ui.aceternity.com/templates",
     content: () => {
       return (
         <p>
-          Led Zeppelin, a legendary British rock band, is renowned for their
-          innovative sound and profound impact on the music industry. Formed in
-          London in 1968, they have become a cultural icon in the rock music
-          world. <br /> <br />
-          Their songs often reflect a blend of blues, hard rock, and folk music,
-          capturing the essence of the 1970s rock era. With a career spanning
-          over a decade, Led Zeppelin has released numerous hit albums and
-          singles that have garnered them a massive fan following both in the
-          United Kingdom and abroad.
+          Rangrez is a painting competition that allows artists to bring their
+          imagination to life on canvas. Participants can choose any theme and
+          showcase their artistic expression through colors, strokes, and
+          techniques. <br /> <br />
+          This event celebrates creativity and the beauty of visual
+          storytelling, making it a highlight for art enthusiasts.
         </p>
       );
     },
   },
   {
-    description: "Mustafa Zahid",
-    title: "Toh Phir Aao",
-    src: "https://assets.aceternity.com/demos/toh-phir-aao.jpeg",
-    ctaText: "Play",
+    description: "Poster Making - Anvesha",
+    title: "Design with a Message",
+    src: "https://assets.aceternity.com/demos/led-zeppelin.jpeg",
+    ctaText: "Participate",
     ctaLink: "https://ui.aceternity.com/templates",
     content: () => {
       return (
         <p>
-          "Aawarapan", a Bollywood movie starring Emraan Hashmi, is renowned for
-          its intense storyline and powerful performances. Directed by Mohit
-          Suri, the film has become a significant work in the Indian film
-          industry. <br /> <br />
-          The movie explores themes of love, redemption, and sacrifice,
-          capturing the essence of human emotions and relationships. With a
-          gripping narrative and memorable music, "Aawarapan" has garnered a
-          massive fan following both in India and abroad, solidifying Emraan
-          Hashmi's status as a versatile actor.
+          Anvesha challenges participants to create impactful posters based on a
+          surprise theme revealed on the spot. This event tests creativity,
+          quick thinking, and artistic skills, as participants design visually
+          compelling posters that convey strong messages. <br /> <br />
+          It’s a perfect platform for those who love blending art with
+          awareness.
+        </p>
+      );
+    },
+  },
+  {
+    description: "Clay Modelling - Mrittika",
+    title: "Sculpting Imagination",
+    src: "https://assets.aceternity.com/demos/led-zeppelin.jpeg",
+    ctaText: "Participate",
+    ctaLink: "https://ui.aceternity.com/templates",
+    content: () => {
+      return (
+        <p>
+          Mrittika is a clay modeling event where participants sculpt their
+          creativity into tangible forms. With just their hands and a lump of
+          clay, artists bring their imagination to life, shaping stunning
+          figures, abstract art, or expressive characters. <br /> <br />
+          This event showcases the beauty of handcrafted artistry and
+          three-dimensional storytelling.
+        </p>
+      );
+    },
+  },
+  {
+    description: "Installation - Aakriti",
+    title: "Art in Space",
+    src: "https://assets.aceternity.com/demos/led-zeppelin.jpeg",
+    ctaText: "Participate",
+    ctaLink: "https://ui.aceternity.com/templates",
+    content: () => {
+      return (
+        <p>
+          Aakriti is an installation art competition that encourages
+          participants to create immersive artistic structures using various
+          materials. These installations transform spaces into thought-provoking
+          art pieces, conveying emotions, messages, or abstract concepts. <br />{" "}
+          <br />A unique blend of creativity and craftsmanship, this event
+          redefines how we experience art.
+        </p>
+      );
+    },
+  },
+  {
+    description: "Collage - Sangam",
+    title: "Blending Art & Imagination",
+    src: "https://assets.aceternity.com/demos/led-zeppelin.jpeg",
+    ctaText: "Participate",
+    ctaLink: "https://ui.aceternity.com/templates",
+    content: () => {
+      return (
+        <p>
+          Sangam is a collage-making event where participants combine images,
+          textures, and materials to create meaningful compositions. This event
+          challenges artists to think beyond traditional mediums and craft
+          stunning visual narratives using cutouts, paper, and other elements.{" "}
+          <br /> <br />
+          It’s a celebration of mixed-media creativity and storytelling.
         </p>
       );
     },

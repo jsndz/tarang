@@ -135,13 +135,13 @@ export default function SportsEv() {
               <div className="">
                 <motion.h3
                   layoutId={`title-${card.title}-${id}`}
-                  className="font-medium text-neutral-800 dark:text-neutral-200 text-center md:text-left"
+                  className="font-medium text-text dark:text-neutral-200 text-center md:text-left"
                 >
                   {card.title}
                 </motion.h3>
                 <motion.p
                   layoutId={`description-${card.description}-${id}`}
-                  className="text-neutral-600 dark:text-neutral-400 text-center md:text-left"
+                  className="text-paragraph dark:text-neutral-400 text-center md:text-left"
                 >
                   {card.description}
                 </motion.p>
@@ -189,113 +189,92 @@ export const CloseIcon = () => {
 
 const cards = [
   {
-    description: "Lana Del Rey",
-    title: "Summertime Sadness",
-    src: "https://assets.aceternity.com/demos/lana-del-rey.jpeg",
-    ctaText: "Play",
-    ctaLink: "https://ui.aceternity.com/templates",
-    content: () => {
-      return (
-        <p>
-          Lana Del Rey, an iconic American singer-songwriter, is celebrated for
-          her melancholic and cinematic music style. Born Elizabeth Woolridge
-          Grant in New York City, she has captivated audiences worldwide with
-          her haunting voice and introspective lyrics. <br /> <br />
-          Her songs often explore themes of tragic romance, glamour, and
-          melancholia, drawing inspiration from both contemporary and vintage
-          pop culture. With a career that has seen numerous critically acclaimed
-          albums, Lana Del Rey has established herself as a unique and
-          influential figure in the music industry, earning a dedicated fan base
-          and numerous accolades.
-        </p>
-      );
-    },
-  },
-  {
-    description: "Babbu Maan",
-    title: "Mitran Di Chhatri",
-    src: "https://assets.aceternity.com/demos/babbu-maan.jpeg",
-    ctaText: "Play",
-    ctaLink: "https://ui.aceternity.com/templates",
-    content: () => {
-      return (
-        <p>
-          Babu Maan, a legendary Punjabi singer, is renowned for his soulful
-          voice and profound lyrics that resonate deeply with his audience. Born
-          in the village of Khant Maanpur in Punjab, India, he has become a
-          cultural icon in the Punjabi music industry. <br /> <br />
-          His songs often reflect the struggles and triumphs of everyday life,
-          capturing the essence of Punjabi culture and traditions. With a career
-          spanning over two decades, Babu Maan has released numerous hit albums
-          and singles that have garnered him a massive fan following both in
-          India and abroad.
-        </p>
-      );
-    },
-  },
-
-  {
-    description: "Metallica",
-    title: "For Whom The Bell Tolls",
-    src: "https://assets.aceternity.com/demos/metallica.jpeg",
-    ctaText: "Play",
-    ctaLink: "https://ui.aceternity.com/templates",
-    content: () => {
-      return (
-        <p>
-          Metallica, an iconic American heavy metal band, is renowned for their
-          powerful sound and intense performances that resonate deeply with
-          their audience. Formed in Los Angeles, California, they have become a
-          cultural icon in the heavy metal music industry. <br /> <br />
-          Their songs often reflect themes of aggression, social issues, and
-          personal struggles, capturing the essence of the heavy metal genre.
-          With a career spanning over four decades, Metallica has released
-          numerous hit albums and singles that have garnered them a massive fan
-          following both in the United States and abroad.
-        </p>
-      );
-    },
-  },
-  {
-    description: "Led Zeppelin",
-    title: "Stairway To Heaven",
+    description: "Football - Kickoff",
+    title: "The Beautiful Game",
     src: "https://assets.aceternity.com/demos/led-zeppelin.jpeg",
-    ctaText: "Play",
+    ctaText: "Join",
     ctaLink: "https://ui.aceternity.com/templates",
     content: () => {
       return (
         <p>
-          Led Zeppelin, a legendary British rock band, is renowned for their
-          innovative sound and profound impact on the music industry. Formed in
-          London in 1968, they have become a cultural icon in the rock music
-          world. <br /> <br />
-          Their songs often reflect a blend of blues, hard rock, and folk music,
-          capturing the essence of the 1970s rock era. With a career spanning
-          over a decade, Led Zeppelin has released numerous hit albums and
-          singles that have garnered them a massive fan following both in the
-          United Kingdom and abroad.
+          Kickoff is a football competition where teams compete in fast-paced
+          matches to showcase their skills, teamwork, and strategy. Whether it's
+          dribbling, passing, or shooting, every moment on the field is full of
+          excitement and energy. <br /> <br />A thrilling event for football
+          enthusiasts to cheer and compete!
         </p>
       );
     },
   },
   {
-    description: "Mustafa Zahid",
-    title: "Toh Phir Aao",
-    src: "https://assets.aceternity.com/demos/toh-phir-aao.jpeg",
-    ctaText: "Play",
+    description: "Basketball - Hoops",
+    title: "Bouncing to Victory",
+    src: "https://assets.aceternity.com/demos/led-zeppelin.jpeg",
+    ctaText: "Join",
     ctaLink: "https://ui.aceternity.com/templates",
     content: () => {
       return (
         <p>
-          "Aawarapan", a Bollywood movie starring Emraan Hashmi, is renowned for
-          its intense storyline and powerful performances. Directed by Mohit
-          Suri, the film has become a significant work in the Indian film
-          industry. <br /> <br />
-          The movie explores themes of love, redemption, and sacrifice,
-          capturing the essence of human emotions and relationships. With a
-          gripping narrative and memorable music, "Aawarapan" has garnered a
-          massive fan following both in India and abroad, solidifying Emraan
-          Hashmi's status as a versatile actor.
+          Hoops is a basketball tournament that challenges teams to showcase
+          their agility, precision, and teamwork on the court. From fast breaks
+          to buzzer-beaters, every second of the game is filled with intensity.{" "}
+          <br /> <br />
+          Perfect for fans who love high-energy action and competitive spirit.
+        </p>
+      );
+    },
+  },
+  {
+    description: "Badminton - Smash",
+    title: "Shuttle and Smash",
+    src: "https://assets.aceternity.com/demos/led-zeppelin.jpeg",
+    ctaText: "Join",
+    ctaLink: "https://ui.aceternity.com/templates",
+    content: () => {
+      return (
+        <p>
+          Smash is a badminton event where players compete in intense singles or
+          doubles matches, testing their speed, reflexes, and precision. The
+          game is fast-paced, and every smash and drop shot brings excitement to
+          the court. <br /> <br />A perfect event for badminton enthusiasts to
+          showcase their skills.
+        </p>
+      );
+    },
+  },
+  {
+    description: "Volleyball - Set and Spike",
+    title: "Teamwork in the Air",
+    src: "https://assets.aceternity.com/demos/led-zeppelin.jpeg",
+    ctaText: "Join",
+    ctaLink: "https://ui.aceternity.com/templates",
+    content: () => {
+      return (
+        <p>
+          Set and Spike is a volleyball competition where teams battle it out
+          with powerful serves, sets, and spikes. This event emphasizes
+          coordination, strategy, and strength as teams work together to secure
+          victory. <br /> <br />A great sport for those who love high-flying
+          action and team dynamics.
+        </p>
+      );
+    },
+  },
+  {
+    description: "Cricket - Boundary Rush",
+    title: "Chasing the Run",
+    src: "https://assets.aceternity.com/demos/led-zeppelin.jpeg",
+    ctaText: "Join",
+    ctaLink: "https://ui.aceternity.com/templates",
+    content: () => {
+      return (
+        <p>
+          Boundary Rush is a cricket tournament where players aim to score big
+          with perfect shots, fast runs, and solid bowling. The game is all
+          about precision, power, and strategy, making every moment on the field
+          thrilling. <br /> <br />
+          An exciting event for cricket fans to showcase their batting and
+          bowling skills!
         </p>
       );
     },

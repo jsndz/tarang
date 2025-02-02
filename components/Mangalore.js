@@ -25,8 +25,10 @@ export function Mangalore() {
     },
   ];
   return (
-    <div className="relative overflow-hidden w-full h-full py-20">
-      <h2 className="text-2xl font-bold mb-4">Attractions of Mangalore</h2>
+    <div className="relative overflow-hidden w-full h-full py-20 bg-dark">
+      <h2 className="text-2xl font-bold mb-4 text-text">
+        Attractions of Mangalore
+      </h2>
       <div className="border-2 border-gray-300 rounded-lg p-4">
         <Carousel slides={slideData} />
       </div>

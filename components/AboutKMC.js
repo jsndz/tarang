@@ -2,29 +2,33 @@ import React from "react";
 
 const AboutKMC = () => {
   return (
-    <div className="relative flex flex-col px-4 py-16 mx-auto lg:block lg:flex-col lg:py-32 xl:py-48 md:px-8 sm:max-w-xl md:max-w-full bg-gray-100">
-      <div className="z-0 flex justify-center h-full -mx-4 overflow-hidden lg:pt-24 lg:pb-16 lg:pr-8 xl:pr-0 lg:w-1/2 lg:absolute lg:justify-start lg:bottom-0 lg:left-0 lg:items-center">
-        <img
-          src="https://kitwind.io/assets/kometa/laptop.png"
-          className="object-cover object-left w-full h-auto lg:w-auto lg:h-full transition-transform duration-300 hover:scale-105"
-        />
-      </div>
-
-      <div className="relative flex justify-end max-w-xl mx-auto xl:pr-32 lg:max-w-screen-xl lg:ml-auto">
-        <div className="mb-16 lg:pr-5 lg:max-w-lg lg:mb-0">
-          <div className="max-w-xl mb-6">
-            <h2 className="max-w-lg mb-6 font-sans text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl sm:leading-none">
-              About KMC
-            </h2>
-            <p className="text-base text-gray-700 md:text-lg leading-relaxed">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae explicabo.
-            </p>
-          </div>
+    <section className="bg-dark ">
+      <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+        <div className="mr-auto place-self-center lg:col-span-7">
+          <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
+            About KMC
+          </h1>
+          <p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl ">
+            Kasturba Medical College (KMC) Mangalore, established in 1955, is a
+            prestigious medical institution under Manipal Academy of Higher
+            Education (MAHE). It is known for its high academic standards,
+            modern infrastructure, and research-oriented approach. The college
+            offers undergraduate (MBBS), postgraduate, and super-specialty
+            programs in various medical disciplines. With well-equipped
+            hospitals for clinical training, KMC Mangalore attracts students
+            from across India and abroad, maintaining a strong reputation in
+            medical education and healthcare.
+          </p>
+        </div>
+        <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
+          <img
+            src="./kmcm.webp"
+            alt="mockup"
+            className="transition-transform duration-300 hover:scale-105"
+          />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

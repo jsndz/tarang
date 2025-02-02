@@ -9,14 +9,17 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-        gold: "#E3B778",
-        "dark-gold": "#D99B58",
-        maroon: "#791F1F",
-        burgundy: "#5E1414",
-        "warm-beige": "#F2E1C2",
-        dark: "#2E1A14",
+        background: "#A63C06",
+        text: "#EEBA0B",
+        border: "#C36F09",
+        buttonbg: "#C36F09",
+        buttonhover: "#A63C06",
+        paragraph: "#F4E409",
+        accent: "#F4E409",
+        // dark: "#710000",
+      },
+      backgroundImage: {
+        dark: "linear-gradient(to bottom right, #111827, #1F2937)", // Equivalent to bg-gradient-to-br from-gray-900 to-gray-800
       },
       borderRadius: {
         lg: "var(--radius)",

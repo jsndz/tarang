@@ -5,7 +5,7 @@ const Messages = () => {
     {
       quote:
         "Implementation was seamless and the results exceeded our expectations. The platform's flexibility is remarkable.",
-      name: "Dean's Name",
+      name: "Dr. B Unnikrishnan",
       designation: "Dean",
       src: "/dean.jpg",
     },
@@ -33,12 +33,10 @@ const Messages = () => {
     },
   ];
   return (
-    <div className="p-6 bg-gray-100 rounded-lg shadow-md">
+    <div className="p-6 rounded-lg shadow-md bg-dark">
       {" "}
-      <h2 className="text-2xl font-semibold mb-4 text-gray-800">
-        Messages
-      </h2>{" "}
-      <div className="border border-gray-300 p-4 rounded-lg bg-white">
+      <h2 className="text-2xl font-semibold mb-4 text-text">Messages</h2>{" "}
+      <div className="border border-gray-300 p-4 rounded-lg bg-dark">
         <AnimatedTestimonials testimonials={testimonials} />
       </div>
     </div>
