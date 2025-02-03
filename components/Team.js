@@ -22,7 +22,7 @@ const Messages = () => {
         "The scalability and performance have been game-changing for our organization. Highly recommend to any growing business.",
       name: "Dr Shrikala Baliga ",
       designation: "Associate Dean",
-      src: "/researchco.jpg",
+      src: "/adean1.jpg",
     },
     {
       quote:

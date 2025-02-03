@@ -8,7 +8,11 @@ export function Hero() {
         {/* Navigation or Logo Section */}
         <div className="absolute top-10 left-1/2 flex transform -translate-x-1/2 lg:flex lg:items-center lg:w-auto lg:space-x-6 z-20 rounded-lg bg-white">
           <a className="text-3xl font-bold leading-none" href="#">
-            <img src="./kmclogo.png" alt="Tarang" width="150" height="150" />
+            <img
+              src="./kmclogo.png"
+              alt="Tarang"
+              className="w-[150px] h-[150px]"
+            />
           </a>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -24,7 +28,7 @@ export function Hero() {
               d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
             />
           </svg>
-          <img src="./70.png" alt="Tarang" width="150" height="150" />
+          <img src="./70.png" alt="Tarang" className="w-[150px] h-[150px]" />
         </div>
 
         {/* Main Content */}
